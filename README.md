@@ -1,135 +1,245 @@
-# Phillip’s Home Lab – Cumulative Learning & Certification Projects
+# Phillip’s Home Lab  
+**Cumulative Learning, Operations Practice, and Certification Projects**
+
+---
 
 ## Purpose
-A long-term, evolving environment to support practical skill development and certification-aligned projects. Primary goals:
-- Pass industry certifications
-- Practice job-like IT tasks
-- Produce interview-ready examples
-- Strengthen fundamentals and troubleshooting
-- Maintain a long-term technical reference
 
-## Audience
-- Personal learning and reference
-- Interview discussion and demonstrations
-- Recruiters / hiring managers reviewing hands-on capability
-- Documentation practice for enterprise IT roles
+This repository documents a **long-term, evolving home lab** used to build and reinforce practical IT skills through **hands-on experimentation, troubleshooting, and structured documentation**.
+
+The lab is designed to:
+
+- Support **industry certification preparation**
+- Practice **job-realistic IT tasks** and workflows
+- Produce **interview-ready examples** grounded in real scenarios
+- Strengthen **foundational systems knowledge**
+- Serve as a **living technical reference** over time
+
+This is not a short-term portfolio. It is a **career-grade learning environment**.
+
+---
+
+## Intended Audience
+
+- **Personal learning and long-term reference**
+- **Interview discussion and technical demonstrations**
+- **Recruiters and hiring managers** evaluating hands-on capability
+- Practice ground for **enterprise-style documentation**
+
+---
 
 ## Scope & Philosophy
-- General-purpose home lab that evolves with career goals
-- Prioritizes operational IT skills (troubleshooting, deployment, diagnostics, decision-making)
-- Not a production environment; not focused on advanced DevOps or exploitative security
-- Technologies explored when relevant to current objectives
+
+- General-purpose home lab that evolves alongside career goals
+- Emphasis on **operational IT disciplines**:
+  - Troubleshooting
+  - Deployment
+  - Diagnostics
+  - Decision-making under constraints
+- Not a production environment
+- Not focused on exploitative security or niche DevOps tooling
+- Technologies are explored **only when relevant to current objectives**
+
+> The focus is on **thinking like an IT professional**, not collecting tools.
+
+---
 
 ## Certification Alignment
-- Current focus: CompTIA A+, Microsoft AZ-900
-- Near-term: Network+, Security+, Linux+, AZ-104, other vendor/domain certs
-- Labs and projects map to exam objectives and real IT tasks
+
+Current and planned work aligns with both **exam objectives** and **real job duties**.
+
+### Active Focus
+- **CompTIA A+**
+- **Microsoft AZ-900**
+
+### Near-Term / Planned
+- Network+
+- Security+
+- Linux+
+- AZ-104
+- Additional vendor or domain-specific certifications as appropriate
+
+Labs and playbooks are explicitly mapped to:
+- Exam domains
+- Common Tier-1 / Tier-2 support tasks
+- Operations and infrastructure fundamentals
+
+---
 
 ## Lab Environment
-### Active Systems
-- Legacy Desktop PC (Windows 7-era hardware)
-- Windows 11 Pro Desktop
-- Windows 11 Home Laptop
-- Ubuntu Desktop Laptop
-- Synology NAS
-- Virtualization: VirtualBox, Hyper-V
 
-### Cloud Platforms (used selectively)
+### Active Systems
+- Legacy desktop PC (Windows 7-era hardware)
+- Windows 11 Pro desktop
+- Windows 11 Home laptop
+- Ubuntu desktop laptop
+- Synology NAS
+- Virtualization platforms:
+  - VirtualBox
+  - Hyper-V
+
+### Cloud Platforms (Used Selectively)
 - Microsoft Azure
 - AWS
 - Google Cloud
 - Microsoft 365
 
+Cloud usage is **deliberate and minimal**, prioritizing:
+- Cost control
+- Architectural correctness
+- Tear-down after use
+
+---
+
 ## Use of Linux
-- Use cases: legacy hardware support, CLI troubleshooting, OS-agnostic fundamentals, Linux cert prep
 
-## Lab Structure (Repository guidance)
-Suggested top-level repo layout:
-- README.md (this document)
-- LICENSE
-- CONTRIBUTING.md
-- CODE_OF_CONDUCT.md
-- .github/
-    - ISSUE_TEMPLATE/
-    - PULL_REQUEST_TEMPLATE.md
-    - workflows/ (CI or automation)
-- docs/ (designs, diagrams, reference guides)
-- labs/
-    - comptia_aplus/
-    - azure/
-    - linux/
-- playbooks/ (troubleshooting templates and completed playbooks)
-- assets/ (screenshots, photos; no secrets)
-- scripts/ (automation snippets)
-- archive/ (retired experiments)
+Linux is used for:
+- Supporting legacy hardware
+- CLI-first troubleshooting practice
+- Reinforcing OS-agnostic fundamentals
+- Preparation for Linux-focused certifications
+- Understanding cross-platform behavior
 
-Branching & release basics:
-- main — stable reference
-- develop — ongoing changes and drafts
-- feature/* — experimental work
-- Use semantic tags/releases for major milestones (e.g., v1.0 — CompTIA A+ readiness)
+---
+
+## Repository Structure (Guidance)
+
+```text
+README.md               # This document
+LICENSE
+CONTRIBUTING.md
+CODE_OF_CONDUCT.md
+.github/
+  ├─ ISSUE_TEMPLATE/
+  ├─ PULL_REQUEST_TEMPLATE.md
+  └─ workflows/
+docs/                   # Diagrams, designs, reference material
+labs/
+  ├─ comptia_aplus/
+  ├─ azure/
+  └─ linux/
+playbooks/              # Troubleshooting templates and completed playbooks
+scripts/                # Automation snippets (PowerShell, Bash, Python)
+assets/                 # Screenshots and photos (no secrets)
+archive/                # Retired or superseded experiments
+```
+
+### Branching & Releases
+- `main` — stable reference
+- `develop` — ongoing work
+- `feature/*` — experiments or isolated changes
+- Semantic tags for milestones  
+  *(e.g., v1.0 — CompTIA A+ readiness)*
+
+---
 
 ## Troubleshooting Playbooks
-Playbooks should capture:
-- Title and context
-- Environment and preconditions
-- Symptoms
-- Diagnostic steps and tools
+
+Playbooks document **repeatable problem-solving**, not just fixes.
+
+Each playbook should capture:
+- Context and scope
+- Environment and assumptions
+- Symptoms and indicators
+- Diagnostic steps and tools used
 - Root cause
-- Resolution and verification
+- Resolution and validation
 - Lessons learned
-Provide both checklist and step-by-step variants.
+
+Both **checklist** and **step-by-step** formats are encouraged where useful.
+
+---
 
 ## Documentation Standards
-- Emphasize reasoning, decision-making, and reproducible steps
-- Include screenshots/photos only when clarifying
-- Never include passwords or secrets
-- Prefer depth when it improves repeatability
-- Write so another technician can reproduce results
 
-## Repo & Collaboration Guidance
-- README: high-level overview and quick start
-- CONTRIBUTING.md: contribution rules, formatting, commit message conventions
-- ISSUE_TEMPLATE: bug, enhancement, lab request
-- PULL_REQUEST_TEMPLATE: summary, testing performed, impact
-- Use GitHub Actions for lightweight checks (markdown lint, spelling)
-- Track issues for requested labs, fixes, and roadmap items
+- Emphasize **reasoning and decision-making**
+- Capture **reproducible steps**
+- Use screenshots or photos only when they add clarity
+- Never store credentials, secrets, or sensitive data
+- Favor depth when it improves repeatability
+- Write so **another technician could reproduce the work without context**
+
+---
+
+## Repo & Collaboration Practices
+
+- `README.md` — high-level orientation
+- `CONTRIBUTING.md` — formatting, commit, and contribution standards
+- Issue templates:
+  - Bug
+  - Enhancement
+  - Lab request
+- Pull request template:
+  - Summary
+  - Testing performed
+  - Impact / risk
+- Lightweight GitHub Actions may be used for:
+  - Markdown linting
+  - Spelling or formatting checks
+
+---
 
 ## Roadmap / Future Additions
-- Structured lab exercises mapped to exam objectives
-- Playbook templates (YAML/Markdown)
-- Infrastructure-as-code examples (Terraform, ARM, Bicep)
-- Configuration examples (Ansible, PowerShell DSC)
-- Containerized labs (Docker Compose / k3s)
-- Automated lab teardown scripts to minimize cloud spend
-- Visual architecture diagrams in docs/
-- Progress tracker for certification objectives and study logs
 
-## Current Phase & Goal
-- Initial setup and hardware assessment
-- Goal: Achieve CompTIA A+ Core 1 readiness and build Tier-1 troubleshooting documentation
+Planned expansions include:
+- Structured lab exercises mapped to certification objectives
+- Reusable playbook templates (Markdown / YAML)
+- Infrastructure-as-Code examples (Terraform, ARM, Bicep)
+- Configuration management samples (Ansible, PowerShell DSC)
+- Containerized lab environments (Docker Compose / k3s)
+- Automated cloud teardown scripts to minimize cost
+- Architecture diagrams and system flows
+- Certification progress trackers and study logs
 
-## Tone & Style
+---
+
+## Current Phase & Immediate Goal
+
+- Initial environment setup and hardware assessment
+- Primary objective: **CompTIA A+ Core 1 readiness**
+- Secondary objective: Build **Tier-1 troubleshooting documentation** that mirrors real support work
+
+---
+
+## Tone & Style Guidelines
+
 - Professional, technical, methodical
-- Mix of first-person and neutral documentation depending on context
-- Written to support resume bullets and interview explanations without rewriting
+- First-person where reflection adds value
+- Neutral, operational tone where documentation clarity matters
+- Written so content can be reused directly for:
+  - Resume bullets
+  - Interview explanations
+  - Internal documentation examples
 
-## Notes
-- All systems are non-production; misconfigurations introduced intentionally for practice
-- Cloud resources are ephemeral and torn down when not required
+---
+
+## Notes & Constraints
+
+- All systems are **non-production**
+- Misconfigurations are introduced intentionally for learning
+- Cloud resources are ephemeral and destroyed when no longer needed
+
+---
 
 ## Summary
-This repository is a living technical reference that documents how problems are approached and solved. Structure contributions around reproducible playbooks, clear documentation standards, and certification-aligned labs to maximize learning and employer-facing value.
 
-Template snippet — Troubleshooting playbook header (use in playbooks/*.md):
-- Title:
-- Date:
-- Author:
-- Environment:
-- Symptoms:
-- Steps:
-- Root cause:
-- Resolution:
-- Verification:
-- Notes / Lessons learned:
+This repository is a **living technical reference** documenting how systems fail, how problems are approached, and how resolutions are verified.
 
+The emphasis is on **operational thinking, reproducibility, and professional documentation** rather than novelty or scale.
+
+---
+
+### Troubleshooting Playbook Header Template
+
+```text
+Title:
+Date:
+Author:
+Environment:
+Symptoms:
+Diagnostic Steps:
+Root Cause:
+Resolution:
+Verification:
+Notes / Lessons Learned:
+```
